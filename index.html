@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String reversal</h1>
+    Enter a string : 
+    <input type="text" id="f1">
+    <button onclick="ring()">Reverse</button><br><br>
+    <p id="s1"></p>
+    <script>
+        function ring(){
+            let f1 = document.getElementById("f1").value;
+            let outing = "";
+            for (let i= f1.length- 1;i>=0;i--){
+                outing += f1[i];
+            }
+            document.getElementById("s1").innerHTML = outing;
+        }
+    </script>
+
+</body>
+</html>
